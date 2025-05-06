@@ -1,0 +1,128 @@
+.navbar{
+    width: 100% ;
+    justify-content: space-between;
+    display: flex;
+    margin: 0 !important;
+    align-items: center;
+    padding: 15px 7% ;
+    background-color: #fff;
+}
+.day_nignt{
+    margin-left: 2% ;
+}
+@media (min-width:(1450)){
+    .navbar{
+        width: 100vw;
+    }
+    ul li{
+        font-weight: 900;
+    }
+    
+}
+.logo{
+    width: 160px;
+    cursor: pointer;
+    margin-left: -25px !important;
+}
+.ul1{
+    flex: 1;
+    list-style: none;
+    grid:20px;
+    font-size:x-large;
+    font-weight: bolder;
+    color: black !important;
+    text-align: center !important;
+}
+.ul1 li a {
+    color: inherit; /* Ensures that the link inherits color from the parent */
+    text-decoration: none; /* Remove underline if needed */
+}
+.ul1, .ul1 li {
+    display: inline-block;
+    margin: 10px 20px !important;
+    cursor: pointer;
+    font-size: 18px;
+    color: #000; /* This color is black */
+}
+.dark .ul1, .dark .ul1 li {
+    display: inline-block;
+    margin: 10px 20px !important;
+    cursor: pointer;
+    font-size: 18px;
+    color: white; /* This color is white */
+}
+.toggle_icon{
+    width:60px;
+    cursor: pointer;
+    margin-left: 40px !important;
+    margin: 2px 14px !important;
+}
+.search{
+    display: flex;
+    align-items: center;
+    background: #242424;
+    padding: 10px 20px !important;
+    border-radius: 50px;
+}
+.search input{
+    padding: 6px;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 18px;
+    max-width: 200px;
+}
+.icon1{
+    width: 35px;
+}
+.search input::placeholder{
+    color: #fff;
+}
+.dark .navbar{
+    background-color:#000 !important;
+    color:#fff ;
+}
+.dark .search{
+    background:#fff ;
+}
+
+.dark .search input::placeholder{
+    color:#000;
+}
+.dark .search input{
+    color:#05ff00 ;
+    background-color: transparent;
+}
+.search input{
+    color:rgb(255, 106, 0);
+    background-color: transparent;
+}
+li:hover{
+    color: rgb(255, 106, 0);
+}
+.dark li:hover{
+    color: #05ff00 ;
+}
+.bts11{
+    border-radius: 25px;
+    width: 15vh !important;
+    text-decoration: none;
+    font-size: larger;
+    font-weight:500;
+    font-style: italic;
+    background-color:#ff6600;
+    color: #ff6600 !important;
+    height: 5vh;
+}
+.dark .bts11{
+    background-color: #05ff00;
+}
+.dark .bts11:hover{
+    background-color: #ff6600;
+    color: #05ff00 !important;
+}
+.bts11:hover{
+    background-color: #05ff00;
+    color: rgb(255, 106, 0);
+}
