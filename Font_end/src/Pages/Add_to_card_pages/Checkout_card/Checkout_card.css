@@ -1,0 +1,43 @@
+
+.grid-container-element { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 20px; 
+    margin-top: 7%;
+    border: 1px solid black; 
+    width: 100%; 
+} 
+.grid-child-element { 
+    margin: 10px; 
+    border: 1px solid red; 
+}
+.first-last_name , .email-address,.Street-address,.city-state,.pin-country,.phone-number{
+    width: 100%;
+    
+}
+.first-last_name input,.city-state input,.pin-country input{
+    justify-content: space-between;
+    width: 47%;
+    margin-top: 2%;
+    height: 7vh;
+    margin-left: 2%;
+}
+.email-address input,.Street-address input,.phone-number input{
+    width: 96%;
+    margin-top: 2%;
+    height: 7vh;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+.total-bill{
+    width: 90%;
+    padding-top: 3%;
+    margin-top: 2%;
+}
+.total-bill button{
+    height: 7vh;
+    background-color:  #05ff00;
+}
+.total-bill button:hover{
+    background-color: #ff6600;
+}

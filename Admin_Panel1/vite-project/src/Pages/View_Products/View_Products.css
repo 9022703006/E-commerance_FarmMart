@@ -1,0 +1,27 @@
+.list-table-format{
+    display: grid;
+    grid-template-columns: 05fr 2fr 1fr 1fr 0.5fr;
+    align-items: center;
+    gap: 2px;
+    width: 90% !important;
+    padding: 12px 15px;
+    border: 1px solid hsl(0, 0%, 79%);
+    font-size: 13px;
+    background-color: aqua;
+}
+.list{
+    width: 90%;
+    margin: 2%;
+
+}
+
+.list-table-format img{
+    width: 50px;
+}
+@media(max-width:600px) {
+    .list-table-format{
+        grid-template-columns: 1fr 3fr 1fr;
+        gap: 15px;
+    }
+    
+}

@@ -1,0 +1,109 @@
+/* Profile.css */
+
+img.rounded-circle {
+  object-fit: cover;
+  border: 2px solid #ddd;
+  margin-left: 18%;
+}
+
+.text-dark {
+  color: #5a5c69 !important;
+}
+
+.shadow {
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15) !important;
+}
+
+.btn-primary {
+  background-color: #4e73df;
+  border-color: #4e73df;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #2e59d9;
+  border-color: #2653d4;
+}
+
+.card {
+  background-color: #fff;
+  border: none;
+  border-radius: 0.35rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-header {
+  background-color: transparent;
+  border-bottom: 1px solid #e3e6f0;
+}
+
+.card-body {
+  padding: 1.25rem;
+}
+
+.img-profile {
+  height: 2rem;
+  width: 2rem;
+}
+
+.img-profile.rounded-circle {
+  border-radius: 50%;
+}
+
+.progress {
+  height: 1rem;
+  overflow: hidden;
+  background-color: #e9ecef;
+  border-radius: 0.35rem;
+}
+
+.progress-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 0.75rem;
+  transition: width 0.6s ease;
+}
+
+/* Dropdown badges */
+.badge-counter {
+  position: absolute;
+  transform: scale(0.7);
+  transform-origin: top right;
+  right: 0.25rem;
+  margin-top: -0.25rem;
+}
+
+/* Navbar override */
+.navbar {
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+}
+
+.navbar-search {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Topbar Divider */
+.topbar-divider {
+  height: 2rem;
+  width: 0;
+  border-right: 1px solid #e3e6f0;
+  margin: auto 1rem;
+}
+
+@media (max-width: 768px) {
+  .navbar-search {
+    display: none !important;
+  }
+
+  .form-inline.d-sm-inline-block {
+    display: none !important;
+  }
+
+  .d-sm-none {
+    display: block !important;
+  }
+}

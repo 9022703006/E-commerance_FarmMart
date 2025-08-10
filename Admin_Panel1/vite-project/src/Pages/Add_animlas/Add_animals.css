@@ -1,0 +1,91 @@
+.add {
+    max-width: 70%;
+    margin: 50px auto; /* Center horizontally and add top margin */
+    color: #6d6d6d;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center children horizontally */
+}
+.heading{
+    text-align: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.add form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    align-items: center; /* Center form content */
+}
+
+.add-img-upload img {
+    width: 35%;
+    margin: 0 auto; /* Center image */
+    display: block;
+}
+
+.add-products-name,
+.add-products-descraction {
+    width: max(40%, 280px);
+}
+
+.add-products-name input,
+.add-products-descraction textarea {
+    padding: 10px;
+    border: 1px solid aqua; /* Corrected border styling */
+    border-radius: 5px;
+    border-bottom: 2px solid red;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.add-products-price,
+.add-product {
+    display: flex;
+    gap: 30px;
+    justify-content: center; /* Center grouped inputs */
+}
+
+.add-products-price select,
+.add-products-price input {
+    max-width: 120px;
+    padding: 10px;
+}
+
+.add-btn {
+    margin-top: 5px;
+    width: 100% !important;
+    border: none;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.data{
+    width: 100%;
+
+}
+.data input ,button,select{
+    width: 75%;
+    gap: 5px;
+    margin-left: 10%;
+    height: 7vh;
+    border-bottom: #05ff00 !important;
+    margin-top: 2%;
+}
+.border1{
+    background-color: aliceblue;
+    width: 100%;
+}
+.data button{
+    width: 75%;
+    margin-left: 10%;
+    background-color:#ff6600;
+}
+.data  button:hover{
+  background-color:#05ff00;
+
+}

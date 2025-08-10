@@ -1,0 +1,136 @@
+
+.Sell_area {
+    display: grid;
+    gap: 8px;
+}
+.dark h3{
+    color: #05ff00;
+}
+h3{
+    color: #ff6600;
+}
+.dark p{
+    color: white;
+}
+.Grid_layout_1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+} 
+
+@media(min-width:350px) and (max-width:500px){
+    .Grid_layout_1{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+.bst12{
+    background-color: aliceblue !important;
+}
+
+.bst12:hover{
+    background-color:#05ff00 !important;
+}
+
+.dark .bst12:hover{
+    background-color: #ff6600 !important;
+}
+
+.container_sell {
+    display: flex;
+    gap: 2%;
+    flex-wrap: wrap;
+    align-content: start;
+  }
+  
+  .sell_1 {
+    width: 25%;
+    height: 75%;
+   
+  }
+  
+  .sell_2 {
+    flex-grow: 1;
+    height: 75%;
+  }
+.div1 {
+    grid-column: span 2 / span 2;
+    border-bottom:2px solid black;
+    border-radius: 5%;
+}
+.h12{
+    text-align: center !important;
+    justify-content: center !important;
+
+}
+.dark .h12:hover{
+    background-color:  #05ff00 ;
+    color:  #ff6600 !important;
+    border-radius: 25%;
+    cursor: pointer;
+}
+ .h12:hover{
+    background-color: #ff6600;
+    color: #05ff00 !important;
+    border-radius: 25%;
+    cursor: pointer;
+}
+
+.div2 {
+    grid-column: span 2 / span 2;
+    grid-column-start: 3;
+    border-bottom:2px solid black;
+    border-radius: 5%;
+}
+
+.data{
+    width: 100%;
+}
+.data input ,button,select{
+    width: 75%;
+    gap: 5px;
+    height: 7vh;
+    margin-top: 2%;
+}
+
+/* Small Mobile: 350px–500px */
+@media screen and (max-width: 500px) {
+    .Grid_layout_1 {
+        grid-template-columns: 1fr;
+    }
+    .sell_1, .sell_2 {
+        width: 100%;
+    }
+}
+
+/* Medium Mobile/Tablets: 501px–768px */
+@media screen and (max-width: 768px) and (min-width: 501px) {
+    .Grid_layout_1 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .sell_1 {
+        width: 50%;
+    }
+    .sell_2 {
+        width: 50%;
+    }
+}
+
+/* Large Tablets / Small Laptops: 769px–1024px */
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .Grid_layout_1 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .sell_1 {
+        width: 33%;
+    }
+    .sell_2 {
+        width: 66%;
+    }
+    @media screen and (max-width: 500px) {
+    .data input,
+    .data button,
+    .data select {
+        width: 100%;}
+}
+
+}
