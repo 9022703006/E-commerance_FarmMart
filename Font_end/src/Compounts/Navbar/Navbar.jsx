@@ -11,18 +11,19 @@ import { faBagShopping, faBugs, faHome, faIdCard, faShop } from '@fortawesome/fr
 import { IconContext } from 'react-icons';
 import { Store_context } from '../../Context_Provider/Store_context';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Chartai from '../../Chart_ai/Chartai';
 
 
-function Navbar({ theme, upadtethem ,setshowlogin,setCard}) {
+function Navbar({ theme, upadtethem, setshowlogin, setCard }) {
 
-  const {Total_card_amount,token,settoken} = useContext(Store_context);
+  const { Total_card_amount, token, settoken } = useContext(Store_context);
 
   const toggle_mode = () => {
     theme == 'light' ? upadtethem('dark') : upadtethem('light')
   }
   /*<img  src={theme=='light' ? logo_black : logo_white} alt='' className='logo'/>* above ul*/
 
-    const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -32,13 +33,16 @@ function Navbar({ theme, upadtethem ,setshowlogin,setCard}) {
   return (
     <div>
       <div className='navbar'>
-        <h2>FARM-MART</h2>
-       
-      <div className="menu-toggle" onClick={toggleMenu}>
-        ☰
-      </div>
+        <div>
+            <Link to={'/'}><h2 className='heading'>FARM-MART</h2></Link>
+        </div>
+        <div className="dark">
+          <div className="menu-toggle" onClick={toggleMenu}>
+            ☰
+          </div>
+        </div>
 
-        <ul  className={`ul1 ${menuOpen ? 'show' : ''}`}>
+        <ul className={`ul1 ${menuOpen ? 'show' : ''}`}>
           <li><Link to={'/'}>Home</Link></li>
           <li><Link to={'/Animals_Products'}>Products</Link></li>
           <li><Link to={'/Animals_pages'}>LiveStock</Link></li>
@@ -50,14 +54,20 @@ function Navbar({ theme, upadtethem ,setshowlogin,setCard}) {
         </div>
         <div className='day_nignt'>
           <img onClick={() => { toggle_mode() }} src={theme == 'light' ? night_theme : day} alt="" className='toggle_icon' />
+          <i onClick={() => setshowlogin(true)} class="fa fa-user faa " style={{ fontSize: "35px" }} aria-hidden="true"></i>
+          <FontAwesomeIcon ></FontAwesomeIcon>
+          <FontAwesomeIcon icon={faBagShopping} onClick={() => setCard(true)} className={Total_card_amount() === 0 ? "" : "dot_menu"} aria-hidden="true" style={{ fontSize: "35px", marginLeft: "25px" }}></FontAwesomeIcon>
+        </div>
+        <div>
+               <button className='bts11'><Link to={'/Sell_Pages'}><p>SELL +</p></Link></button>
+        </div>
+        <div>
+           <button className='btsAi'><Link to={"/Ai_chat"}> <p>AI CHAT</p></Link></button>
+        </div>
         </div>
         <div >
-            <button className='bts11'><Link to={'/Sell_Pages'}>SELL ANIMALS</Link></button>
           
-             <i  onClick={()=>setshowlogin(true)}class="fa fa-user faa " style={{fontSize:"35px"}} aria-hidden="true"></i>
-           
-            <FontAwesomeIcon ></FontAwesomeIcon>
-             <FontAwesomeIcon  icon={faBagShopping} onClick={()=>setCard(true)}  className={Total_card_amount()===0 ? "" : "dot_menu"} aria-hidden="true"  style={{fontSize:"35px",marginLeft:"25px"}}></FontAwesomeIcon>
+        <div>
         </div>
       </div>
     </div>

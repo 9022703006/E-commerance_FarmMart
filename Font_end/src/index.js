@@ -15,6 +15,7 @@ import Animals_pages from "./Pages/Animals_Pages/Animals_pages";
 import Checkout_card from "./Pages/Add_to_card_pages/Checkout_card/Checkout_card";
 import Payment from "./Pages/Add_to_card_pages/Payment/Payment";
 import About_us from "./Pages/About_us/About_us";
+import Chartai from "./Chart_ai/Chartai";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -56,6 +57,10 @@ let allrouter = createBrowserRouter([
     path:'About_us',
     element:<About_us/>
 
+  },
+  {
+    path:"Ai_chat",
+    element:<Chartai/>
   }
 ])
 root.render(

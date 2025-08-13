@@ -15,6 +15,7 @@ import Login_pop from './Pages/login/Login_pop';
 import Add_to_card from './Pages/Add_to_card_pages/Add_to_card';
  import { ToastContainer, toast } from 'react-toastify';
 import Payment from './Pages/Add_to_card_pages/Payment/Payment';
+import Chartai from './Chart_ai/Chartai';
 
 function App() {
    // Theme state management with localStorage
