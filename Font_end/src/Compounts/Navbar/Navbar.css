@@ -159,33 +159,51 @@ li:hover {
     color: #05ff00;
 }
 
-.bts11 {
-    border-radius: 25px;
-    margin-left: 25% !important;
-    width: 12vh !important;
-    text-decoration: none;
-    font-size: larger;
-    font-weight: 500;
-    font-style: italic;
+.bts11, .btsAi {
+    border-radius: 7px;
+    padding: 10px 21px;
+    font-size: 16px;
+    margin: 0;
     background-color: #ff6600;
-    color: #ff6600 !important;
-    height: 5vh;
+}
+.bts11 p{
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+     font-weight: bold;
+}
+.btsAi:hover{
+    background-color: #05ff00 !important;
+    
+}
+.btsAi p {
+    display: flex !important;
+    justify-content: center; /* centers text horizontally */
+    align-items: center;     /* centers text vertically if container has height */
+    text-align: center;
+    margin-top: -15%;
+    font-weight: bold;
 }
 
-.btsAi {
-    border-radius: 25px;
-    margin-left: 40% !important;
-    width: 12vh !important;
-    text-decoration: none;
-    width: 150% !important;
-    font-size: larger;
-    font-weight: 500;
-    font-style: italic;
-    background-color: #131212;
-    color: #ff6600 !important;
-    height: 5vh;
-
+.dark .bts11 {
+    background-color: #05ff00;
 }
+
+.dark .btsAi:hover {
+    background-color: #05ff00 !important;
+    color: #05ff00 !important;
+}
+.dark .bts11:hover {
+    background-color: #ff6600;
+    color: #05ff00 !important;
+}
+
+.bts11:hover {
+    background-color: #05ff00;
+    color: rgb(255, 106, 0);
+}
+
 
 .dark .bts11 {
     background-color: #05ff00;
