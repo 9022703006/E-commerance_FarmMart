@@ -24,7 +24,7 @@ const Add_animals = () => {
     console.log(data);
   }, [data])
 
-  const url = "http://localhost:4000";
+  const url = "https://e-commerance-farmmart-backend.onrender.com";
 
  const onsubmitHander = async (event) => {
   event.preventDefault();
