@@ -59,7 +59,7 @@ function Navbar({ theme, upadtethem, setshowlogin, setCard }) {
           <FontAwesomeIcon icon={faBagShopping} onClick={() => setCard(true)} className={Total_card_amount() === 0 ? "" : "dot_menu"} aria-hidden="true" style={{ fontSize: "35px", marginLeft: "25px" }}></FontAwesomeIcon>
         </div>
         <div>
-               <button className='bts11'><Link to={'/Sell_Pages'}><p>SELL +</p></Link></button>
+               <button className='bts11'><Link to={'/Sell_Pages'}><p>SELL</p></Link></button>
         </div>
         <div>
            <button className='btsAi'><Link to={"/Ai_chat"}> <p>AI CHAT</p></Link></button>
