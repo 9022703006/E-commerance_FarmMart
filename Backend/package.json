@@ -4,7 +4,8 @@
   "main": "Server.js",
   "type": "module",
   "scripts": {
-    "server": "nodemon Server.js"
+    "server": "nodemon Server.js",
+    "postinstall": "npm rebuild bcrypt --build-from-source"
   },
   "author": "",
   "license": "ISC",
