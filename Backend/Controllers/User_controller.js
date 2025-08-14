@@ -1,6 +1,6 @@
 import userModel from "../Models/User_models.js";
 import jwt from "jsonwebtoken";
-import bcrypt from "bcrypt";
+import bcrypt from 'bcryptjs';
 import vaildator from "validator";  
 // in controller we build the logic...
 
