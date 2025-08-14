@@ -10,7 +10,7 @@ export const Store_context = createContext(null);
 
 const Store_context_provider = (props) => {
   const [cartItems, updateCart] = useState({});
-  const url = 'http://localhost:4000' // and declared into contextValue
+  const url = "https://e-commerance-farmmart-backend.onrender.com" // and declared into contextValue
   const [token,settoken]= useState("");// to save the token of password
 
 
